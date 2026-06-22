@@ -33,13 +33,14 @@
 html,
 body {
   min-height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   font-family: var(--font-family);
   background: var(--color-white);
   color: var(--color-black);
-  overflow-x: hidden;
   overflow-wrap: break-word;
   -webkit-font-smoothing: antialiased;
 }
@@ -677,6 +678,12 @@ ul {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: clamp(1rem, 2vw, 1.75rem);
   align-items: start;
+}
+
+.social-embeds > * {
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .social-embeds--yt {
