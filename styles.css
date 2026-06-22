@@ -36,13 +36,11 @@ body {
 }
 
 body {
-  overflow-x: hidden;
-}
-
-body {
   font-family: var(--font-family);
   background: var(--color-white);
   color: var(--color-black);
+  overflow-x: hidden;
+  overflow-wrap: break-word;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -132,6 +130,7 @@ ul {
    Hero frame
    ============================================ */
 .hero {
+  height: 100vh;
   height: 100dvh;
   max-height: 100dvh;
   padding: var(--frame-padding);
@@ -940,7 +939,13 @@ ul {
     display: none;
   }
 
-  .social-embeds,
+  /* Instagram embeds enforce a large min width — keep them single column. */
+  .social-embeds {
+    grid-template-columns: 1fr;
+    gap: clamp(1rem, 4vw, 1.5rem);
+  }
+
+  /* YouTube is 16:9 and scales freely, so keep it two-up. */
   .social-embeds--yt {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: clamp(0.5rem, 2vw, 1rem);

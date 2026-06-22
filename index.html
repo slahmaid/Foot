@@ -419,13 +419,35 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   <script>
-    window.addEventListener("load", function () {
+    (function () {
       var preloader = document.getElementById("preloader");
-      // Keep the spinner visible briefly so the animation is perceivable.
-      setTimeout(function () {
+      if (!preloader) {
+        return;
+      }
+
+      var hidden = false;
+      function hidePreloader() {
+        if (hidden) {
+          return;
+        }
+        hidden = true;
         preloader.classList.add("is-hidden");
-      }, 700);
-    });
+      }
+
+      // Hide once the DOM/page is ready — do NOT wait on slow third-party
+      // embeds (Instagram, TikTok, YouTube, Chart.js).
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", function () {
+          setTimeout(hidePreloader, 600);
+        });
+      } else {
+        setTimeout(hidePreloader, 600);
+      }
+
+      // Safety net: never let the preloader hang.
+      setTimeout(hidePreloader, 3000);
+      window.addEventListener("load", hidePreloader);
+    })();
   </script>
 
   <script>
