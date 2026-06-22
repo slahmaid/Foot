@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chlah — Hero Kit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&family=Poppins:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="preloader" id="preloader" role="status" aria-label="Loading">
+    <div class="spinner">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <!--
+    EDITABLE CONTENT
+    Change the text below directly in HTML to update the hero section.
+  -->
+  <header class="hero" aria-label="Hero section">
+
+    <nav class="hero__nav" aria-label="Main navigation">
+      <a class="hero__logo" href="#">hero—kit</a>
+
+      <div class="hero__menu" id="hero-menu">
+        <ul class="hero__links">
+          <li><a href="#about">about</a></li>
+          <li><a href="#services">services</a></li>
+          <li><a href="#work">work</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+
+        <ul class="hero__social">
+          <li><a href="#" aria-label="Instagram">ig</a></li>
+          <li><a href="#" aria-label="Twitter">tw</a></li>
+          <li><a href="#" aria-label="Facebook">fb</a></li>
+          <li><a href="#" aria-label="YouTube">yt</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="hero__stage">
+      <h1 class="hero__title">Lamine<span class="hero__title-rest">&nbsp;Yamal</span></h1>
+
+      <div class="hero__panel">
+        <div class="hero__panel-inner">
+          <img
+            class="hero__image"
+            src="assets/Hero.jpg"
+            alt="Silhouette portrait"
+          >
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <section class="bio" id="about" aria-label="Biography">
+    <div class="bio__body">
+      <p>Imagine making your Barcelona debut at 15, conquering the Euros at 16, and inheriting the club's legendary #10 shirt by the age of 18.</p>
+      <p>Meet Lamine Yamal, the €200-million La Masia prodigy and back-to-back Kopa Trophy winner who is single-handedly rewriting football’s history books.</p>
+    </div>
+  </section>
+
+  <section class="stats" id="stats" aria-label="Career statistics">
+    <div class="stats__copy">
+      <h2 class="stats__heading">By the numbers</h2>
+      <p class="stats__description">Senior career output that is staggering for his age. At Barcelona he has 49 goals and 45 assists in 151 appearances, with roughly 6–8 goals and 6 assists for Spain. In La Liga alone he has completed 338 successful dribbles — over three per game.</p>
+    </div>
+
+    <div class="stats__grid">
+      <div class="stat">
+        <div class="stat__value" data-stat-target="57" data-stat-prefix="~">0</div>
+        <p class="stat__label">Career goals (all competitions)</p>
+      </div>
+
+      <div class="stat">
+        <div class="stat__value" data-stat-target="51" data-stat-prefix="~">0</div>
+        <p class="stat__label">Career assists</p>
+      </div>
+
+      <div class="stat">
+        <div class="stat__value" data-stat-target="338">0</div>
+        <p class="stat__label">Successful dribbles in La Liga</p>
+      </div>
+
+      <div class="stat">
+        <div class="stat__value" data-stat-target="151">0</div>
+        <p class="stat__label">Barcelona appearances</p>
+      </div>
+    </div>
+  </section>
+
+  <!--
+    TOP GOALS GRID
+    Replace each <video src="..."> with the real goal clip.
+    Edit the title (scoreline), meta (competition), and date freely.
+  -->
+  <section class="goals" id="goals" aria-label="Top goals">
+    <div class="goals__copy">
+      <h2 class="goals__heading">Top goals</h2>
+      <p class="goals__description">Defining moments from his rise — for club and country.</p>
+    </div>
+
+    <div class="goals__grid">
+      <article class="goal-card">
+        <div class="goal-card__media">
+          <video src="https://videos.pexels.com/video-files/27180348/12091515_2560_1440_50fps.mp4" autoplay muted loop playsinline></video>
+        </div>
+        <div class="goal-card__content">
+          <h3 class="goal-card__title">Spain 2–1 France</h3>
+          <p class="goal-card__meta">UEFA Euro 2024 · Semi-final</p>
+          <p class="goal-card__date">9 July 2024</p>
+        </div>
+      </article>
+
+      <article class="goal-card">
+        <div class="goal-card__media">
+          <video src="https://videos.pexels.com/video-files/27180348/12091515_2560_1440_50fps.mp4" autoplay muted loop playsinline></video>
+        </div>
+        <div class="goal-card__content">
+          <h3 class="goal-card__title">Barcelona 3–3 Inter Milan</h3>
+          <p class="goal-card__meta">Champions League · Semi-final</p>
+          <p class="goal-card__date">30 April 2025</p>
+        </div>
+      </article>
+
+      <article class="goal-card">
+        <div class="goal-card__media">
+          <video src="https://videos.pexels.com/video-files/27180348/12091515_2560_1440_50fps.mp4" autoplay muted loop playsinline></video>
+        </div>
+        <div class="goal-card__content">
+          <h3 class="goal-card__title">Barcelona 4–0 Real Madrid</h3>
+          <p class="goal-card__meta">La Liga · El Clásico</p>
+          <p class="goal-card__date">26 October 2024</p>
+        </div>
+      </article>
+
+      <article class="goal-card">
+        <div class="goal-card__media">
+          <video src="https://videos.pexels.com/video-files/27180348/12091515_2560_1440_50fps.mp4" autoplay muted loop playsinline></video>
+        </div>
+        <div class="goal-card__content">
+          <h3 class="goal-card__title">Real Madrid 2–5 Barcelona</h3>
+          <p class="goal-card__meta">Supercopa de España · Final</p>
+          <p class="goal-card__date">12 January 2025</p>
+        </div>
+      </article>
+
+      <article class="goal-card">
+        <div class="goal-card__media">
+          <video src="https://videos.pexels.com/video-files/27180348/12091515_2560_1440_50fps.mp4" autoplay muted loop playsinline></video>
+        </div>
+        <div class="goal-card__content">
+          <h3 class="goal-card__title">Spain 4–1 Georgia</h3>
+          <p class="goal-card__meta">UEFA Euro 2024 · Round of 16</p>
+          <p class="goal-card__date">30 June 2024</p>
+        </div>
+      </article>
+
+      <article class="goal-card">
+        <div class="goal-card__media">
+          <video src="https://videos.pexels.com/video-files/27180348/12091515_2560_1440_50fps.mp4" autoplay muted loop playsinline></video>
+        </div>
+        <div class="goal-card__content">
+          <h3 class="goal-card__title">Barcelona 2–1 Athletic Club</h3>
+          <p class="goal-card__meta">La Liga · Matchday 33</p>
+          <p class="goal-card__date">27 April 2025</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="feature" id="origin" aria-label="The origin of 304">
+    <div class="feature__text">
+      <h2 class="feature__heading">The Origin of "304"</h2>
+      <p class="feature__body">Born Lamine Yamal Nasraoui Ebana on July 13, 2007, his dazzling footwork was forged on the unforgiving concrete courts of Rocafonda, a working-class neighborhood in Mataró. After outclassing older kids and shining at his local club, CF La Torreta, the seven-year-old prodigy was snapped up by FC Barcelona's famed La Masia academy in 2014. Today, despite his rapid rise to global stardom, he ensures his humble beginnings are never forgotten—celebrating every goal by flashing "304" with his fingers to immortalize his hometown's 08304 postal code on the world stage.</p>
+    </div>
+    <div class="feature__media">
+      <img src="assets/lamine-sign.webp" alt="Lamine Yamal flashing his '304' celebration" loading="lazy">
+    </div>
+  </section>
+
+  <section class="profile" id="attributes" aria-label="Player attributes">
+    <div class="profile__chart">
+      <div class="profile__chart-card">
+        <canvas id="yamalRadar"></canvas>
+      </div>
+    </div>
+    <div class="profile__text">
+      <h2 class="profile__heading">Player Profile</h2>
+      <p class="profile__body">Lamine Yamal is the archetypal modern winger, blending explosive pace with a rare, innate footballing intelligence. As his metrics suggest, his standout trait is his world-class dribbling; he possesses a low center of gravity and devastating 1v1 ability that allows him to effortlessly dismantle deep defensive blocks and create space out of nothing.</p>
+      <p class="profile__body">Beyond just raw speed, his exceptional passing and vision mean he operates not just as a touchline threat, but as a primary playmaker. Whether he is cutting inside to unleash a curled strike from his lethal left foot or threading line-breaking passes to overlapping teammates, Yamal dictates the tempo of the final third with a maturity and composure that entirely defies his age.</p>
+    </div>
+  </section>
+
+  <section class="banner" aria-label="Titles & Records">
+    <h2 class="banner__title">Titles &amp; Records</h2>
+    <img src="assets/Lamine-Banner.jpeg" alt="Lamine Yamal" loading="lazy">
+    <p class="banner__caption">A historic haul achieved in record-shattering time. Lamine Yamal has systematically rewritten football history, amassing elite domestic and international trophies while continuously dismantling decades-old "youngest-ever" milestones for both FC Barcelona and Spain.</p>
+  </section>
+
+  <section class="records" aria-label="Titles and records list">
+    <div class="records__grid">
+      <div class="records__col">
+        <h3 class="records__col-title">Titles &amp; Individual Awards</h3>
+        <div class="records__lists">
+          <ul class="records__list">
+            <li>La Liga Champion</li>
+            <li>Copa del Rey Winner</li>
+            <li>Supercopa de España Winner</li>
+            <li>UEFA European Championship Winner</li>
+            <li>UEFA Nations League Runner-up</li>
+            <li>Kopa Trophy</li>
+            <li>Golden Boy</li>
+          </ul>
+          <ul class="records__list">
+            <li>Laureus World Young Sportsperson of the Year</li>
+            <li>Laureus World Breakthrough of the Year</li>
+            <li>La Liga Best Under-23 Player</li>
+            <li>La Liga U-23 Player of the Season</li>
+            <li>UEFA European Championship Young Player of the Tournament</li>
+            <li>UEFA European Championship Goal of the Tournament</li>
+            <li>TM-Player of the Season (Spain)</li>
+          </ul>
+          <ul class="records__list">
+            <li>Top Goal Scorer (U17 Algarve Tournament &amp; UEFA Under-17 Euro)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="records__col">
+        <h3 class="records__col-title">Records</h3>
+        <div class="records__lists">
+          <ul class="records__list">
+            <li>Youngest starter in Champions League history</li>
+            <li>Youngest player to reach 10, 20, 25, and 30 Champions League appearances</li>
+            <li>Youngest player to score and assist in a Champions League game</li>
+            <li>Youngest player to score in a Champions League semi-final</li>
+            <li>Youngest player to appear in a Champions League quarter-final</li>
+            <li>Most Champions League goals before 19th birthday</li>
+            <li>Youngest player to score in a European Qualifiers game</li>
+          </ul>
+          <ul class="records__list">
+            <li>Youngest player to appear at a UEFA EURO</li>
+            <li>Youngest scorer at a UEFA EURO</li>
+            <li>Youngest player to appear in a EURO or World Cup final</li>
+            <li>Youngest player to win a major international tournament</li>
+            <li>Youngest EURO knockout-stage player</li>
+            <li>Youngest assist provider in EURO finals</li>
+            <li>Youngest Spain debutant &amp; goalscorer</li>
+          </ul>
+          <ul class="records__list">
+            <li>Youngest debutant for Barcelona</li>
+            <li>Youngest assist provider in La Liga</li>
+            <li>Youngest goalscorer in Supercopa de España</li>
+            <li>Youngest El Clásico goalscorer</li>
+            <li>Youngest goalscorer in La Liga &amp; for Barcelona</li>
+            <li>First player under 17 to score a La Liga brace</li>
+            <li>Youngest player to reach 50 and 100 Barcelona appearances</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="banner" aria-label="Global Brand & Partnerships">
+    <h2 class="banner__title">Global Brand &amp; Partnerships</h2>
+    <img src="assets/Lamine-Banner-2.jpg" alt="Lamine Yamal" loading="lazy">
+  </section>
+
+  <section class="partners" aria-label="Brand partnerships list">
+    <article class="partner">
+      <h3 class="partner__name">Adidas</h3>
+      <div class="partner__logo"><img src="assets/Adidas.png" alt="Adidas" loading="lazy"></div>
+      <p class="partner__desc">Yamal signed a long-term endorsement partnership with Adidas in February 2024, valued at an estimated $2 million annually. As part of the deal, he wears the 'X Crazyfast' boots and became the first player to officially endorse Lionel Messi's signature 'Spark Gen10s' line. In August 2025, his role expanded as he became a global ambassador for Adidas Originals.</p>
+    </article>
+
+    <article class="partner">
+      <h3 class="partner__name">American Eagle</h3>
+      <div class="partner__logo"><img src="assets/american-eagle-outfitters.png" alt="American Eagle" loading="lazy"></div>
+      <p class="partner__desc">In January 2026, Yamal was announced as a global brand ambassador for American Eagle in a historic five-year deal. This partnership includes talent-led campaigns, such as the "Ready for the World" soccer campaign, and limited-edition product collaborations.</p>
+    </article>
+
+    <article class="partner">
+      <h3 class="partner__name">Visa</h3>
+      <div class="partner__logo"><img src="assets/Visa.svg" alt="Visa" loading="lazy"></div>
+      <p class="partner__desc">He holds an active endorsement agreement with Visa, which yields an annual value of $1.5 million.</p>
+    </article>
+
+    <article class="partner">
+      <h3 class="partner__name">Beats Electronics</h3>
+      <div class="partner__logo"><img src="assets/Beats.png" alt="Beats Electronics" loading="lazy"></div>
+      <p class="partner__desc">Yamal secured a $1 million per year deal with Beats Electronics. He was prominently featured in their "Lamine Records" campaign.</p>
+    </article>
+
+    <article class="partner">
+      <h3 class="partner__name">Konami</h3>
+      <div class="partner__logo"><img src="assets/konami.png" alt="Konami" loading="lazy"></div>
+      <p class="partner__desc">He maintains a sponsorship agreement with the video game and entertainment company Konami, valued at $1 million annually.</p>
+    </article>
+
+    <article class="partner">
+      <h3 class="partner__name">OPPO</h3>
+      <div class="partner__logo"><img src="assets/Oppo.png" alt="OPPO" loading="lazy"></div>
+      <p class="partner__desc">In January 2025, OPPO announced Yamal as their global brand ambassador to lead their "Make Your Moment" initiative. This partnership is valued at $500,000 per year.</p>
+    </article>
+
+    <article class="partner">
+      <h3 class="partner__name">Powerade</h3>
+      <div class="partner__logo"><img src="assets/Powerade.png" alt="Powerade" loading="lazy"></div>
+      <p class="partner__desc">Yamal also has a sponsorship deal with Powerade, worth an estimated $500,000 annually.</p>
+    </article>
+
+    <article class="partner">
+      <h3 class="partner__name">DICK's Sporting Goods</h3>
+      <div class="partner__logo"><img src="assets/Dicks Sporting Goods.png" alt="DICK's Sporting Goods" loading="lazy"></div>
+      <p class="partner__desc">In June 2026, Yamal was featured in a World Cup-focused collaborative campaign between Adidas and DICK's Sporting Goods titled "Where It All Kicks Off". He also fronted a SP5DER x Adidas campaign in March 2026 that bridged streetwear and football.</p>
+    </article>
+  </section>
+
+  <section class="banner" aria-label="Social Media">
+    <h2 class="banner__title">Social Media</h2>
+    <img src="assets/Lamine-social.webp" alt="Lamine Yamal" loading="lazy">
+  </section>
+
+  <section class="social" aria-label="Social media profiles">
+
+    <div class="social-block">
+      <a class="social-block__head" href="https://www.instagram.com/lamineyamal/" target="_blank" rel="noopener">
+        <img class="social-block__icon" src="assets/Instagram.webp" alt="Instagram">
+        <span class="social-block__id">
+          <span class="social-block__platform">Instagram</span>
+          <span class="social-block__handle">@lamineyamal</span>
+        </span>
+      </a>
+      <div class="social-embeds">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DZ3B-0cj0TN/" data-instgrm-version="14"></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DZyChp8j0qy/" data-instgrm-version="14"></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DZn6ZLmjwj9/" data-instgrm-version="14"></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DZcrrXslqWc/" data-instgrm-version="14"></blockquote>
+      </div>
+    </div>
+
+    <div class="social-block">
+      <a class="social-block__head" href="https://www.tiktok.com/@lamine.yamal" target="_blank" rel="noopener">
+        <img class="social-block__icon" src="assets/TikTok.webp" alt="TikTok">
+        <span class="social-block__id">
+          <span class="social-block__platform">TikTok</span>
+          <span class="social-block__handle">@lamine.yamal</span>
+        </span>
+      </a>
+      <div class="social-embeds social-embeds--tiktok">
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@lamine.yamal/video/7649508690835459350" data-video-id="7649508690835459350"><section></section></blockquote>
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@lamine.yamal/video/7649005268449201430" data-video-id="7649005268449201430"><section></section></blockquote>
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@lamine.yamal/video/7645642775693643030" data-video-id="7645642775693643030"><section></section></blockquote>
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@lamine.yamal/video/7645346910550691094" data-video-id="7645346910550691094"><section></section></blockquote>
+      </div>
+    </div>
+
+    <div class="social-block">
+      <a class="social-block__head" href="https://www.youtube.com/@LamineYamal" target="_blank" rel="noopener">
+        <img class="social-block__icon" src="assets/Youtube.webp" alt="YouTube">
+        <span class="social-block__id">
+          <span class="social-block__platform">YouTube</span>
+          <span class="social-block__handle">@LamineYamal</span>
+        </span>
+      </a>
+      <div class="social-embeds social-embeds--yt">
+        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/_UwLgVZPv4k" title="YouTube video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/Ikw5HyhEP0A" title="YouTube video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/S_mrW4CpXK0" title="YouTube video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/iGAJS-aBhls" title="YouTube video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="footer" aria-label="Site footer">
+    <div class="footer__top">
+      <a class="footer__logo" href="#">hero—kit</a>
+
+      <ul class="footer__links">
+        <li><a href="#about">about</a></li>
+        <li><a href="#services">services</a></li>
+        <li><a href="#work">work</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+
+      <ul class="footer__social">
+        <li><a href="https://www.instagram.com/lamineyamal/" target="_blank" rel="noopener" aria-label="Instagram">ig</a></li>
+        <li><a href="#" aria-label="Twitter">tw</a></li>
+        <li><a href="#" aria-label="Facebook">fb</a></li>
+        <li><a href="https://www.youtube.com/@LamineYamal" target="_blank" rel="noopener" aria-label="YouTube">yt</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__bottom">
+      <span class="footer__copy">© 2026 hero—kit. all rights reserved.</span>
+    </div>
+  </footer>
+
+  <script async src="https://www.instagram.com/embed.js"></script>
+  <script async src="https://www.tiktok.com/embed.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script>
+    window.addEventListener("load", function () {
+      var preloader = document.getElementById("preloader");
+      // Keep the spinner visible briefly so the animation is perceivable.
+      setTimeout(function () {
+        preloader.classList.add("is-hidden");
+      }, 700);
+    });
+  </script>
+
+  <script>
+    (function () {
+      var statElements = Array.prototype.slice.call(
+        document.querySelectorAll("[data-stat-target]")
+      );
+
+      function formatStat(element, value) {
+        var decimals = Number(element.dataset.statDecimals || 0);
+        var prefix = element.dataset.statPrefix || "";
+        var suffix = element.dataset.statSuffix || "";
+        var formatted = decimals > 0
+          ? value.toFixed(decimals)
+          : Intl.NumberFormat("en-US").format(Math.round(value));
+
+        return prefix + formatted + suffix;
+      }
+
+      function animateStat(element) {
+        var target = Number(element.dataset.statTarget);
+        var damping = 60;
+        var stiffness = 80;
+        var value = 0;
+        var velocity = 0;
+        var lastTime = performance.now();
+
+        function update(time) {
+          var delta = Math.min((time - lastTime) / 1000, 0.064);
+          var force = (target - value) * stiffness;
+          var resistance = velocity * damping;
+
+          velocity += (force - resistance) * delta;
+          value += velocity * delta;
+          element.textContent = formatStat(element, value);
+          lastTime = time;
+
+          if (Math.abs(target - value) > 0.01 || Math.abs(velocity) > 0.01) {
+            requestAnimationFrame(update);
+            return;
+          }
+
+          element.textContent = formatStat(element, target);
+        }
+
+        requestAnimationFrame(update);
+      }
+
+      if ("IntersectionObserver" in window) {
+        var observer = new IntersectionObserver(function (entries, obs) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) {
+              return;
+            }
+            animateStat(entry.target);
+            obs.unobserve(entry.target);
+          });
+        }, { threshold: 0.35 });
+
+        statElements.forEach(function (element) {
+          observer.observe(element);
+        });
+      } else {
+        statElements.forEach(animateStat);
+      }
+    })();
+  </script>
+
+  <script>
+    (function () {
+      var canvas = document.getElementById("yamalRadar");
+      if (!canvas || typeof Chart === "undefined") {
+        return;
+      }
+
+      var chartConfig = {
+        type: "radar",
+        data: {
+          labels: ["Dribbling", "Passing", "Pace", "Shooting", "Physicality", "Defending"],
+          datasets: [{
+            data: [90, 86, 85, 81, 53, 23],
+            backgroundColor: "rgba(0, 122, 255, 0.2)",
+            borderColor: "rgba(0, 122, 255, 0.8)",
+            borderWidth: 2,
+            pointBackgroundColor: "rgba(0, 122, 255, 1)",
+            pointBorderColor: "#ffffff",
+            pointHoverBackgroundColor: "#ffffff",
+            pointHoverBorderColor: "rgba(0, 122, 255, 1)",
+            pointRadius: 4,
+            pointHoverRadius: 6
+          }]
+        },
+        options: {
+          responsive: true,
+          animation: {
+            duration: 2500,
+            easing: "easeOutQuart"
+          },
+          scales: {
+            r: {
+              angleLines: { color: "rgba(150, 150, 150, 0.2)" },
+              grid: { color: "rgba(150, 150, 150, 0.2)", circular: true },
+              pointLabels: {
+                font: { family: "'Poppins', sans-serif", size: 13, weight: "600" },
+                color: "#333333"
+              },
+              ticks: { display: false, min: 0, max: 100 }
+            }
+          },
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              backgroundColor: "rgba(0, 0, 0, 0.8)",
+              titleFont: { family: "'Poppins', sans-serif", size: 14 },
+              bodyFont: { family: "'Poppins', sans-serif", size: 14 },
+              padding: 12,
+              cornerRadius: 8,
+              displayColors: false
+            }
+          }
+        }
+      };
+
+      if (!("IntersectionObserver" in window)) {
+        new Chart(canvas, chartConfig);
+        return;
+      }
+
+      var chartObserver = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            new Chart(entry.target, chartConfig);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { root: null, threshold: 0.4 });
+
+      chartObserver.observe(canvas);
+    })();
+  </script>
+
+</body>
+</html>
