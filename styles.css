@@ -968,6 +968,60 @@ ul {
   .footer__social {
     justify-self: auto;
   }
+
+  /* ---- Consistent mobile spacing ---- */
+  .bio,
+  .stats,
+  .goals,
+  .feature,
+  .profile,
+  .partners,
+  .social,
+  .records {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: clamp(3rem, 8vw, 4rem);
+  }
+
+  .bio {
+    padding-top: 1.5rem;
+    padding-bottom: clamp(2.5rem, 7vw, 3.5rem);
+  }
+
+  .stats {
+    padding-top: clamp(2rem, 7vw, 3rem);
+  }
+
+  .banner {
+    padding-bottom: clamp(2.5rem, 7vw, 3.5rem);
+  }
+
+  .banner__title,
+  .stats__heading,
+  .goals__heading {
+    margin-bottom: clamp(1rem, 4vw, 1.5rem);
+  }
+
+  .goals__copy {
+    margin-bottom: clamp(1.75rem, 6vw, 2.5rem);
+  }
+
+  .stats__grid {
+    margin-top: clamp(2rem, 6vw, 2.75rem);
+  }
+
+  .social {
+    gap: clamp(2.25rem, 7vw, 3rem);
+  }
+
+  .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .footer__bottom {
+    margin-top: clamp(1.75rem, 6vw, 2.5rem);
+  }
 }
 
 @media (max-width: 480px) {
@@ -975,5 +1029,26 @@ ul {
     --title-size: min(120px, 18dvh, 13.5vw);
     --panel-inset: 10px;
     --frame-padding: 8px;
+  }
+
+  .bio,
+  .stats,
+  .goals,
+  .feature,
+  .profile,
+  .partners,
+  .social,
+  .records,
+  .footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .stats__grid {
+    gap: 24px 14px;
+  }
+
+  .goals__grid {
+    gap: 12px;
   }
 }
